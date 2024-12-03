@@ -34,7 +34,7 @@ header div a {
 /* Hero section styles */
 main section:first-child {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./images/background.png");
+    url("./image/Background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
