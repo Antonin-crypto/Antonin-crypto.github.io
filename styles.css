@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+}
+
+/* Header styles */
+header {
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+header img {
+  height: 30px;
+}
+
+header div a {
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
+  font-weight: 700;
+}
+
+/* Hero section styles */
+main section:first-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+main section:first-child h1 {
+  font-size: 120px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.hero-text p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+button.register-btn {
+  background: #c271ff;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  color: white;
+  font-weight: bold;
+  margin-top: 38px;
+  cursor: pointer;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Learn from pros section */
+.learn-section {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+.learn-title {
+  font-size: 32px;
+  margin-bottom: 70px;
+}
+
+.learn-title span {
+  color: #c271ff;
+}
+
+.pros-container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pro-card {
+  width: 220px;
+}
+
+.pro-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.pro-card h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.pro-card p {
+  color: white;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Quote section styles */
+.quote-section {
+  background: #c271ff;
+  padding: 100px 0;
+}
+
+.quote-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+.quote-container img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote-content {
+  flex: 1;
+}
+
+.quote-text {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.author-title {
+  font-style: italic;
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+/* Tutorials section styles */
+.tutorials-section {
+  padding: 80px 0;
+  color: #071629;
+  text-align: center;
+}
+
+.tutorials-section h1 {
+  font-size: 32px;
+  margin-bottom: 70px;
+}
+
+.tutorials-section h1 span {
+  color: #c271ff;
+}
+
+.tutorials-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.tutorial-card {
+  text-align: left;
+}
+
+.tutorial-preview {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.tutorial-preview img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px !important;
+  height: 64px;
+  opacity: 0.8;
+}
+
+.tutorial-card h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.tutorial-desc {
+  font-size: 14px;
+  color: rgba(7, 22, 41, 0.8);
+  margin-bottom: 16px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.author-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author-info h3 {
+  color: #c271ff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tutorial-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating img {
+  height: 15px;
+}
+
+.duration {
+  color: #c271ff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* FAQ section styles */
+.faq-section {
+  padding: 90px 0;
+  background: white;
+}
+
+.faq-section h1 {
+  color: #071629;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.faq-container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.faq-row {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 80px;
+}
+
+.faq-row:last-child {
+  margin-bottom: 0;
+}
+
+.faq-item {
+  flex: 1;
+}
+
+.faq-item h2 {
+  color: #071629;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.faq-item p {
+  color: rgba(7, 22, 41, 0.8);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Footer styles */
+.footer {
+  background: #071629;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  height: 30px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Membership section styles */
+.membership-section {
+  background: #071629;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.membership-section h1 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.membership-section h1 span {
+  color: #c271ff;
+}
+
+.membership-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto 70px;
+  padding: 0 20px;
+}
+
+.membership-item {
+  color: white;
+}
+
+.membership-item img {
+  width: 45px;
+  margin-bottom: 20px;
+}
+
+.membership-item h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.membership-item p {
+  font-size: 14px;
+  line-height: 26px;
+  opacity: 0.8;
+}
+
+.membership-section .register-btn {
+  background: #c271ff;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.hero {
+  background-image: url("./image/Background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
