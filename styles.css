@@ -34,7 +34,7 @@ header div a {
 /* Hero section styles */
 main section:first-child {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./image/Background.png");
+    url("./image/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -217,7 +217,7 @@ button.register-btn {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 64px !important;
+  width: 64px;
   height: 64px;
   opacity: 0.8;
 }
@@ -413,7 +413,7 @@ button.register-btn {
 }
 
 .hero {
-  background-image: url("./image/Background.png");
+  background-image: url("./image/background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
