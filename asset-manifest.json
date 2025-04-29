@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/fichier/static/css/main.b344ce91.css",
-    "main.js": "/fichier/static/js/main.3002aadb.js",
-    "static/media/jeux2.png": "/fichier/static/media/jeux2.6ce75beeb92a0da4624e.png",
-    "static/media/my_photo.jpg": "/fichier/static/media/my_photo.4045910678ce03963deb.jpg",
-    "static/media/jeux.png": "/fichier/static/media/jeux.7c9f14e7b0a16e217f75.png",
-    "index.html": "/fichier/index.html",
-    "main.b344ce91.css.map": "/fichier/static/css/main.b344ce91.css.map",
-    "main.3002aadb.js.map": "/fichier/static/js/main.3002aadb.js.map"
+    "main.css": "/antonin-portfolio/static/css/main.b344ce91.css",
+    "main.js": "/antonin-portfolio/static/js/main.50921741.js",
+    "static/media/jeux2.png": "/antonin-portfolio/static/media/jeux2.6ce75beeb92a0da4624e.png",
+    "static/media/my_photo.jpg": "/antonin-portfolio/static/media/my_photo.4045910678ce03963deb.jpg",
+    "static/media/jeux.png": "/antonin-portfolio/static/media/jeux.7c9f14e7b0a16e217f75.png",
+    "index.html": "/antonin-portfolio/index.html",
+    "main.b344ce91.css.map": "/antonin-portfolio/static/css/main.b344ce91.css.map",
+    "main.50921741.js.map": "/antonin-portfolio/static/js/main.50921741.js.map"
   },
   "entrypoints": [
     "static/css/main.b344ce91.css",
-    "static/js/main.3002aadb.js"
+    "static/js/main.50921741.js"
   ]
 }
