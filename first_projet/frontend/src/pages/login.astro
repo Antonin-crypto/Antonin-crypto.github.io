@@ -1,0 +1,30 @@
+---
+// src/pages/login.astro
+import LoginForm from '../components/LoginForm.jsx';
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Connexion</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 2rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        gap: 1rem;
+      }
+      input, button {
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <LoginForm client:load />
+  </body>
+</html>

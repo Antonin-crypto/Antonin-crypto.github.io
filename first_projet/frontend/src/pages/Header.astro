@@ -1,0 +1,41 @@
+---
+import "../styles/header.css";
+---
+<header>
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="/logo.png" alt="Logo" />
+    </div>
+
+    <!-- Barre de recherche -->
+    <div class="search-bar">
+      <input type="text" placeholder="Rechercher..." />
+    </div>
+
+    <!-- Icônes et liens -->
+    <div class="nav-icons">
+      <a href="/produits" title="produits">
+        <img src="/icons/t-shirt.png" alt="produits" />
+      </a>
+      <!-- Icône Panier bien entourée par la balise <a> -->
+<a href="/panier" title="panier" aria-label="panier">
+ <img src="/icons/sac-de-courses.png" alt="panier" />
+</a>
+      <div class="nav-links">
+        <a href="/signup" title="inscription"  aria-label="inscription">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scroll-text-icon lucide-scroll-text"><path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/></svg>
+        </a>
+        <!-- Icône de connexion à la place du texte -->
+        <a href="/login" title="Connexion" aria-label="Connexion">
+          <svg xmlns="http://www.w3.org/2000/svg" class="login-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0
+               a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15
+               9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

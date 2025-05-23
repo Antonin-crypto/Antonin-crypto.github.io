@@ -1,0 +1,59 @@
+---
+const cartItems = []; // Initial vide, rempli côté client
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Votre panier</title>
+  </head>
+  <body>
+    <h1>Votre panier</h1>
+    <ul id="cart-list">
+      <li>Chargement du panier...</li>
+    </ul>
+    <p><strong>Total : <span id="total">0.00</span> €</strong></p>
+
+    <script type="module">
+      // Lecture du panier
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const list = document.getElementById('cart-list');
+      const totalSpan = document.getElementById('total');
+
+      list.innerHTML = ''; // Clear le "Chargement du panier..."
+      let total = 0;
+
+      if (cart.length === 0) {
+        list.innerHTML = '<li>Votre panier est vide.</li>';
+      } else {
+        cart.forEach((item, index) => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <strong>${item.name}</strong> - ${item.price} €
+            <br />
+            ${item.description}
+            <br />
+            <img src="http://localhost:8000${item.image}" alt="${item.name}" width="150" />
+            <br />
+            <button data-index="${index}">Retirer</button>
+          `;
+          list.appendChild(li);
+
+          total += parseFloat(item.price);
+        });
+      }
+
+      totalSpan.textContent = total.toFixed(2);
+
+      // Suppression d'un article
+      list.addEventListener('click', (e) => {
+        if (e.target.tagName === 'BUTTON') {
+          const index = parseInt(e.target.dataset.index);
+          cart.splice(index, 1);
+          localStorage.setItem('cart', JSON.stringify(cart));
+          location.reload(); // recharge la page pour mettre à jour
+        }
+      });
+    </script>
+  </body>
+</html>

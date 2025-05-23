@@ -1,0 +1,31 @@
+{
+  "name": "frontend",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "concurrently \"npm run django\" \"npm run astro:wait\"",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro dev",
+    "astro:wait": "wait-on http://localhost:8000 && npm run astro",
+    "django": "cd ../backend && python3 manage.py migrate && python3 manage.py runserver",
+    "tailwind:build": "tailwindcss -i ./src/styles/main.css -o ./public/styles.css --watch"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.7",
+    "@tailwindcss/postcss": "^4.1.5",
+    "@tailwindcss/vite": "^4.1.5",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "astro": "^5.7.12",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.5",
+    "wait-on": "^8.0.3"
+  }
+}
